@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Random CSS Color Generator [2022] For Free No Ads</title>
+<meta name="title" content="Random CSS Color Generator [2022] For Free No Ads"/>
+<meta name="description" content=" A free web tool to generate random css color."/>
+<meta name="keywords" content="Random CSS Color Generator,Web tool, Color Generator, CSS Hex Color,Color Picker"/>
+<meta name="robots" content="index, follow"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="language" content="English"/>
+<meta name="author" content="GANESH KUMAR"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+
+<style>
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+
+main{
+transform:translate(0,200%);
+}
+
+#block{
+margin:auto;
+width:200px;
+background:white;
+border-radius:2px;
+box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+}
+
+#colorCode{
+font-size:140%;
+text-align:center;
+}
+
+#btn{
+font-size:120%;
+text-align:center;
+margin:auto;
+display:block;
+border:none;
+background:black;
+color:white;
+border-radius:2px;
+width:140px;
+font-weight:600;
+padding:2%;
+}
+
+
+@media only screen and (min-width: 480px){
+		main{
+		transform:translate(0,100%);
+		}
+	
+}
+
+</style>
+</head>
+<body>
+<main>
+<div id="block">
+<br>
+ <p id="colorCode">#fff</p><br>
+ <button onclick="generat()" id="btn">GENERATE</button>
+ <br>
+ </div>
+ </main>
+ 
+<script>
+
+function generat(){
+ var randomNum=Math.floor(Math.random()*16777215);
+ var randomCode="#"+randomNum.toString(16);
+ 
+ document.getElementById("colorCode").innerText=randomCode;
+ document.body.style.backgroundColor=randomCode;
+}
+
+
+generat();
+</script>
+</body>
+</html>
